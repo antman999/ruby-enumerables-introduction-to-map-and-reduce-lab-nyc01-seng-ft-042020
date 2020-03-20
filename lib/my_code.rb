@@ -32,7 +32,7 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true (source_array)
-  source_array.reduce{|sum,num|!!sum && !!num}
+  source_array.reduce{|sum,num|!!sum && num = false}
 end
 
 
